@@ -5,8 +5,8 @@ import { inject, Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ControlService {
-
-  private apiUrl = 'http://localhost:4001/caso/'; 
+  // private apiUrl = 'https://modelo-backend-production.up.railway.app/caso'; 
+  private apiUrl = 'http://localhost:4000/caso/'; 
   private _http = inject(HttpClient);
  
   getList(){
